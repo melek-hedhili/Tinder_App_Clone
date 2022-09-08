@@ -5,7 +5,6 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-import {WEB_CLIENT_KEY} from '@env';
 import {
   GoogleSignin,
   statusCodes,
@@ -20,7 +19,8 @@ import {auth} from '../firebase';
 import {async} from '@firebase/util';
 const AuthContext = createContext({});
 GoogleSignin.configure({
-  webClientId: WEB_CLIENT_KEY,
+  webClientId:
+    '17526967147-ppa03u10954kuuuia7ietlpbj89jcfre.apps.googleusercontent.com',
 });
 
 export const AuthProvider = ({children}) => {
