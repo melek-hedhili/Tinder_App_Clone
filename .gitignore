@@ -30,8 +30,6 @@ build/
 local.properties
 *.iml
 *.hprof
-google-services.json
-my-upload-key.keystore
 
 # node.js
 #
