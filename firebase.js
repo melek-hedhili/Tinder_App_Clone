@@ -5,9 +5,10 @@ import {
   AUTH_DOMAIN,
   PROJECT_ID,
   STORAGE_BUCKET,
-  MESSAFING_SENDER_ID,
+  MESSAGING_SENDER_ID,
   APP_ID,
   MESUREMENT_ID,
+  DB_URL,
 } from '@env';
 import {getAuth} from 'firebase/auth';
 
@@ -17,9 +18,10 @@ import {getFirestore, initializeFirestore} from 'firebase/firestore';
 const firebaseConfig = {
   apiKey: API_KEY,
   authDomain: AUTH_DOMAIN,
+  databaseURL: DB_URL,
   projectId: PROJECT_ID,
   storageBucket: STORAGE_BUCKET,
-  messagingSenderId: MESSAFING_SENDER_ID,
+  messagingSenderId: MESSAGING_SENDER_ID,
   appId: APP_ID,
   measurementId: MESUREMENT_ID,
 };
