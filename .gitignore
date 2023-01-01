@@ -30,7 +30,7 @@ build/
 local.properties
 *.iml
 *.hprof
-app/google-services.json
+google-services.json
 
 # node.js
 #
