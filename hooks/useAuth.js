@@ -19,8 +19,7 @@ import {auth} from '../firebase';
 import {async} from '@firebase/util';
 const AuthContext = createContext({});
 GoogleSignin.configure({
-  webClientId:
-    '17526967147-ppa03u10954kuuuia7ietlpbj89jcfre.apps.googleusercontent.com',
+  webClientId: `${process.env.WEB_CLIENT_KEY}`,
 });
 
 export const AuthProvider = ({children}) => {
